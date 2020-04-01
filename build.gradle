@@ -23,10 +23,24 @@ ext {
 }
 
 dependencies {
+    /* Spring Web */
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    /* Spring Cloud */
+    implementation 'org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR2'
+    implementation 'org.springframework.cloud:spring-cloud-starter-consul-all:2.2.0.RELEASE'
     implementation 'de.codecentric:spring-boot-admin-starter-server'
+    implementation 'de.codecentric:spring-boot-admin-server-ui-login:1.5.7'
+
+    /* Spring Security */
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.1.8.RELEASE'
+
+    /* 3rd party */
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    /* Tests */
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
