@@ -1,9 +1,8 @@
 package com.playground.admin;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@PlaygroundIntegrationTest
 class ApplicationTests {
 
     @Test
